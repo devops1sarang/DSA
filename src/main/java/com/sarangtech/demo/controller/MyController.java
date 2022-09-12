@@ -10,6 +10,6 @@ import org.springframework.web.bind.annotation.RestController;
 public class MyController {
     @GetMapping(value = "/get/{name}")
     public ResponseEntity<?> getName(@PathVariable("name") String name) {
-        return new ResponseEntity<>("hi " + name, HttpStatus.OK);
+        return new ResponseEntity<>("hi , hellow " + name, HttpStatus.OK);
     }
 }
